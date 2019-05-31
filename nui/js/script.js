@@ -1,16 +1,3 @@
-// var menus = { // Example Menu
-//     "title": "Title",
-//     "subtitle": "Sub-Title",
-//     "buttons": [
-//         { label: "Button 1", value: "Value 1" },
-//         { label: "Button 2", value: "Value 2" },
-//         { label: "Button 3", value: "Value 3" },
-//         { label: "Button 4", value: "Value 4" },
-//         { label: "Button 5", value: "Value 5" },
-//         { label: "Button 6", value: "Value 6" }
-//     ]
-// }
-
 var menus = {}
 
 function create(t, s, buttons, id, rName)
