@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 5px;
+    background: transparent;
+    display: block;
+}
+
+.menu {
+    width: 400px;
+    position: absolute;
+    left: calc(100% - 450px);
+    top: calc(50% - 150px);
+}
+
+.menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    /* padding: 11px; */
+    
+    text-decoration: none;
+}
+
+.menu li {
+    background-color: #eee;
+    color: black;
+    display: block;
+    /* padding: 11px; */
+    text-decoration: none; 
+}
+
+.menu .button { /* Button Styling? */
+    padding: 0;
+    font-family: 'Prompt', sans-serif;;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #d4d4d4;
+    /* margin: 5px; */
+}
+
+.menu .title { /* Title Styling */    
+    background: rgb(50,30,229);
+    background: linear-gradient(90deg, rgba(50,30,229,1) 0%, rgba(30,136,229,1) 63%); 
+    /* outline: black 1px solid; */
+    -webkit-text-stroke: 1px black;
+    color: white;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.menu .subtitle { /* Sub-Title Styling */
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 26%, rgba(59,59,59,1) 100%); 
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    /* font-weight: bold; */
+    padding: 5px;
+    font-size: 15px;
+    vertical-align: auto;
+}
+
+.menu li[class="button"] .active {
+    background: rgb(101,101,101);
+    background: linear-gradient(90deg, rgba(101,101,101,1) 0%, rgba(135,135,135,0.9780112728685224) 100%); 
+    color: #090909;
+    /* background-color: gray; */
+    /* color: white; */
+}
