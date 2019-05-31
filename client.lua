@@ -1,27 +1,3 @@
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-        if (IsControlJustPressed(0, 182)) then
-            print("Baror")
-            DRP_MenuOpen(GetCurrentResourceName(), "lol", {
-                title = "Title",
-                subtitle = "Sub-Title",
-                elements = {
-                    { label = "Label 1", value = "1" },
-                    { label = "Label 2", value = "2" },
-                    { label = "Label 3", value = "3" },
-                    { label = "Label 4", value = "4" }
-                }
-            }, function(menu, data) -- When a menu button has been pressed.
-                TriggerEvent('chatMessage', "Pressed on " .. data.label .. " with value " .. data.value, { 255, 255, 255 })
-                menu.close()
-            end, function(menu, data) -- When the menu has been closed but not hidden.
-                print("closed")
-            end)
-        end
-    end
-end)
-
 function DRP_MenuOpen(resourceName, id, datas, cb, cbs)
     local display = false
     local menu = {}
