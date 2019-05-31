@@ -46,3 +46,6 @@ function openExampleMenu()
      end)
 end
 ```
+
+***
+**MENU MAY CONTAIN BUGS, REPORT THEM AT https://discord.gg/qBsNpeG**
